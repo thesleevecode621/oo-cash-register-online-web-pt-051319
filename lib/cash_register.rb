@@ -23,7 +23,7 @@ end
     if @discount == 0
       "There is no discount to apply."
     else
-      .total -= (0.01 * @discount * @total).to_i
+     apply_discount.total -= (0.01 * @discount * @total).to_i
       "After the discount, the total comes to $#{self.total}."
     end
   end
